@@ -95,11 +95,11 @@ body {
 
 
               }
-             
+             /*============= Section de droite =============*/
     .section_part_right {
         flex: 1;
-        display: flex;
-        flex-direction: column;
+        
+        
         overflow: hidden;
 
         
@@ -108,11 +108,29 @@ body {
         }
         
         .section_part_right_header {
-            height: 200px;
-            background-color: khaki;
+            height: 10vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+            background-color: #f1f1f1;
         }
+             .section_part_right_header_title {
+                 margin-left: 30px;
+                 font-size: 2em;
+                 letter-spacing: 2px;
+                 
+             } 
     
         .section_part_right_group_article {
             
+
             background-color: lawngreen;
+
         }
+            .posted_article {
+                width: 25vw;
+                height: 40vh;
+
+            }
+            
