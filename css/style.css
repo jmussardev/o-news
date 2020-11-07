@@ -98,13 +98,13 @@ body {
              /*============= Section de droite =============*/
     .section_part_right {
         flex: 1;
+        min-width: 50vw;    
+        min-height: 100vh; 
         
         
         overflow: scroll;
 
         
-        
-        background-color:rgb(240, 90, 90) ;
         }
         
         .section_part_right_header {
@@ -132,8 +132,45 @@ body {
 
         }
             .posted_article {
+                display: flex;
+                flex-direction: column;
                 border-top: solid 1px  #eaeaea;
                 border-right:solid 1px  #eaeaea;
+                padding: 20px 30px 15px 40px
               
             }
+                .posted_article img {
+                    width: 2em;
+                    margin-right: 10px;
+                }
+                .article_date {
+                    color: rgb(194, 194, 194);
+                }
+
+                .posted_article_infos {
+                    font-size: 0.8em;
+                }
+                .sticker_article {
+                    background-color: lightseagreen;
+                    padding: 0.9px 7px 2px 7px;
+                    text-transform: uppercase;
+                    font-size: 0.8em;
+                    color: white;
+                    border-radius: 4px;
+                }
+                    .sticker_article_red {
+                        background-color: red;
+                    }
+                    .sticker_article_blue {
+                        background-color: blue;
+                        
+                    }
+                    .sticker_article_green {
+                        background-color: limegreen;
+                    }
+
+                    .article_rest_link {
+                        font-weight: bold;
+                        text-decoration: underline ;
+                    }
             
