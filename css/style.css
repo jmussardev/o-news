@@ -100,7 +100,7 @@ body {
         flex: 1;
         
         
-        overflow: hidden;
+        overflow: scroll;
 
         
         
@@ -123,14 +123,17 @@ body {
              } 
     
         .section_part_right_group_article {
-            
+            display: grid;
+            grid-template-columns: 25vw 25vw ;
+            justify-content: space-evenly;
+            grid-template-rows: 45vh 45vh;
 
-            background-color: lawngreen;
+           
 
         }
             .posted_article {
-                width: 25vw;
-                height: 40vh;
-
+                border-top: solid 1px  #eaeaea;
+                border-right:solid 1px  #eaeaea;
+              
             }
             
