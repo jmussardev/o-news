@@ -1,21 +1,31 @@
 body {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    max-width:  100vw;
+    max-height: 100vh;
+  
 }
 
 
 /* Section gauche */
 
     .section_part_left {
+    
         
         background-image:  url('../images/nicole.jpg');
+        background-repeat: no-repeat;
         background-size: cover;
-     
+        background-position-y: -60px;
+        flex: 1;
+        position: static;
+        
+        min-width: 50vw;    
+        min-height: 100vh; 
         
     }
     /* Logo titre */
         .section_part_left_logo {
+        
         
            background: url('../images/onews.svg') no-repeat 0px 10px  ;
            background-size: 150px 100px;
@@ -39,15 +49,42 @@ body {
             }
             /* Aside - affichage dernières nouvelles */
         .section_part_left_aside {
-            
+           position: relative;
+           top: 50%;
+           
+           height: 200px;
+           width: 90%;
+           margin: auto;
+           padding:  0px 50px 0px 50px;
+
+           text-align: right;
+           overflow: hidden;
+           color: white;
+           text-shadow: 2px 2px 6px #000000;
          
-            background-color: teal;
+            background-color: rgb(206, 206, 206, 0.5)
 
         }       
+             .section_part_left_aside h1 {
+                 font-size: 2em;
+
+
+             }
+                .section_part_left_aside h1 em {
+                    font-size: 0.5em;
+                    font-weight: normal;
+                   
+                }
            
              
     .section_part_right {
+        flex: 1;
+        display: flex;
+        overflow: scroll;
         
         
         background-color:rgb(240, 90, 90) ;
         }
+
+    
+    
