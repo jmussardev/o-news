@@ -92,9 +92,23 @@ body {
              color: white;
              text-shadow: 2px 2px 6px #000000;
              list-style-type: none;
+               
+              }
 
+              .navigation_btn a {
+                  text-decoration: none;
+                  color: white;
 
               }
+
+              .navigation_btn a:hover {
+                background-color: lightgray;
+                padding: 2px 9px 4px 9px;
+                border-radius: 4px;
+                text-shadow: none;
+              }
+
+
              /*============= Section de droite =============*/
     .section_part_right {
         flex: 1;
