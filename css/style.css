@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+
+/* Section gauche */
+
+    .section_part_left {
+        
+        background-image:  url('../images/nicole.jpg');
+        background-size: cover;
+     
+        
+    }
+    /* Logo titre */
+        .section_part_left_logo {
+        
+           background: url('../images/onews.svg') no-repeat 0px 10px  ;
+           background-size: 150px 100px;
+           position: absolute; 
+           width: 500px;
+           height: 300px;
+           padding: 0px 0px 0px 150px;
+           margin: 75px 0px 0px 50px;
+          
+                    
+        }
+
+            .section_part_left_logo_title {
+
+                padding-top: 0px;
+                margin-top: 0px;
+                line-height: 155%;
+                letter-spacing: 2px;
+                font-size: 2em;
+                color:  white;
+            }
+            /* Aside - affichage dernières nouvelles */
+        .section_part_left_aside {
+            
+         
+            background-color: teal;
+
+        }       
+           
+             
+    .section_part_right {
+        
+        
+        background-color:rgb(240, 90, 90) ;
+        }
