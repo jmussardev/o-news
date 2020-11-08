@@ -15,27 +15,39 @@ body {
         background-image:  url('../images/nicole.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -60px;
+        background-position-y: -9rem;
+      
+        
         flex: 1;
         position: static;
         
         min-width: 50vw;    
         min-height: 100vh; 
         overflow: hidden;
+                    /* Fix application de Flexbox */
+            display: flex;
+            flex-direction: column;     
+            justify-content: space-between;   
+
         
     }
     /* Logo titre */
+    .section_part_left_header {
+        display: flex;
+        align-items: flex-start;
+       
+    }
         .section_part_left_logo {
-        
-        
-           background: url('../images/onews.svg') no-repeat 0px 10px  ;
-           background-size: 150px 100px;
-           position: absolute; 
+           flex: 1;
+           background: url('../images/onews.svg') no-repeat 0px 6px  ;
+           background-size: 110px 60px;
+
            width: 500px;
            height: 300px;
-           padding: 0px 0px 0px 150px;
+           padding: 0px 0px 0px 95px;
            margin: 75px 0px 0px 50px;
-          
+        
+         
                     
         }
 
@@ -43,15 +55,20 @@ body {
 
                 padding-top: 0px;
                 margin-top: 0px;
+                
                 line-height: 155%;
                 letter-spacing: 2px;
-                font-size: 2em;
+                font-size: 1.5em;
                 color:  white;
             }
             /* Aside - affichage dernières nouvelles */
-        .section_part_left_aside {
-           position: relative;
-           top: 50%;
+        .section_part_left_middle {
+            flex: 1;
+            padding-top: 10%;
+          
+            
+        }    
+        .section_part_left_middle_aside {
            
            height: 200px;
            width: 90%;
@@ -76,18 +93,21 @@ body {
                     font-weight: normal;
                    
                 }
-
+        
+        .section_part_left_footer {
+            display: flex;
+            flex-direction: row-reverse;
+            
+        }
         .navigation {
-            position: absolute;
-            top: 96%;
-            left: 25%;
+            width: 50%; 
         }
 
             .navigation_btn {
              display: flex;
              flex-direction: row;
              justify-content: space-around;
-             width: 25vw;
+             
 
              color: white;
              text-shadow: 2px 2px 6px #000000;
@@ -102,7 +122,7 @@ body {
               }
 
               .navigation_btn a:hover {
-                background-color: lightgray;
+                background-color: rgb(209, 209, 209, 0.5);
                 padding: 2px 9px 4px 9px;
                 border-radius: 4px;
                 text-shadow: none;
